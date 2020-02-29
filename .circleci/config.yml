@@ -5,7 +5,7 @@ orbs:
 jobs:
   rubocop:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/ruby:2.6.5-stretch-node
         environment:
           RAILS_ENV: test
           POSTGRES_HOST: 127.0.0.1
@@ -33,7 +33,7 @@ jobs:
 
   rspec:
     docker:
-      - image: circleci/ruby:2.6.3-stretch-node
+      - image: circleci/ruby:2.6.5-stretch-node
         environment:
           RAILS_ENV: test
           POSTGRES_HOST: 127.0.0.1
